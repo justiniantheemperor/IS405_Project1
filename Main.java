@@ -52,8 +52,15 @@ class GenerateRandom {
 
         for (int i = 1; i < numberOfTeams + 1; i++)
         {
+            int exceptionHandler = 0;
+
+            if (listOfNames.size() % (double)(numberOfTeams) > 0)
+            {
+                exceptionHandler = 1;
+            }
+
             System.out.println("Group " + i);
-            for (int j = 0; j < numberOfMembers; j++)
+            for (int j = 0; j < (numberOfMembers + exceptionHandler); j++)
             {
                 System.out.println(listOfNames.get(0));
                 listOfNames.remove(0);
