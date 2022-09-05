@@ -120,7 +120,9 @@ class GenerateRandom {
 
         int numberOfMembers = (int)Math.floor(listOfNames.size() / numberOfTeams); 
 
-        double remaining = listOfNames.size() % numberOfTeams; 
+        double remaining = listOfNames.size() % numberOfTeams;
+
+        System.out.println();
 
         for (int i = 1; i < numberOfTeams + 1; i++) 
         {
